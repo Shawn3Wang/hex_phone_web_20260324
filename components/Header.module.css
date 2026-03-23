@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 20px 8px;
+  background: linear-gradient(to bottom, rgba(10,10,12,0.95) 40%, rgba(10,10,12,0));
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+.logoText {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.slogan {
+  color: var(--text-secondary);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.tabs {
+  display: flex;
+  gap: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.tab {
+  position: relative;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+
+.tab.active {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 3px;
+  background: var(--accent-cyan);
+  border-radius: 2px;
+}
