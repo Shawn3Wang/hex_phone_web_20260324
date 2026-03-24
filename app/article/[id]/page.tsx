@@ -5,6 +5,7 @@ import styles from './Detail.module.css';
 import { supabase } from '@/utils/supabaseClient';
 
 export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 export default async function ArticleDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
