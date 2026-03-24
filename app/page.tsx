@@ -4,6 +4,8 @@ import BottomNav from '@/components/BottomNav';
 import MasonryFeed from '@/components/MasonryFeed';
 import { supabase } from '@/utils/supabaseClient';
 
+export const runtime = 'edge';
+
 export default async function Home() {
   const { data: articles, error } = await supabase
     .from('articles')

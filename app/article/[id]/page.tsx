@@ -4,6 +4,8 @@ import DetailBottomBar from '@/components/DetailBottomBar';
 import styles from './Detail.module.css';
 import { supabase } from '@/utils/supabaseClient';
 
+export const runtime = 'edge';
+
 export default async function ArticleDetail({ params }: { params: Promise<{ id: string }> }) {
   const resolvedParams = await params;
   
