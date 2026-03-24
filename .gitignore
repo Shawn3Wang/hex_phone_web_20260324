@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# data & assets (migrated to cloud/supabase)
+/data/
+/public/images/
+scripts/seed_supabase.js
+wrangler*.log
+*.log
